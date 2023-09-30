@@ -22,6 +22,18 @@ const router = createBrowserRouter([
         path: "/addProducts",
         element: <AddProducts></AddProducts>,
       },
+      {
+        path: "/messages",
+        element: <p>Messages</p>,
+      },
+      {
+        path: "/bills",
+        element: <p>bills</p>,
+      },
+      {
+        path: "/settings",
+        element: <p>Settings</p>,
+      },
     ],
   },
 ]);

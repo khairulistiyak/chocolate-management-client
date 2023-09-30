@@ -33,7 +33,7 @@ const AddProducts = () => {
 
   return (
     <div>
-      <div className="bg-[#F4F3F0] p-7">
+      <div className=" p-7">
         <h2 className="text-3xl font-extrabold text-center">Add a Products</h2>
         <form onSubmit={handleAddProducts}>
           {/* from row name and quantity */}
@@ -68,6 +68,21 @@ const AddProducts = () => {
               <input name="details" type="text" placeholder="Enter Products details" className="input input-bordered md:w-full" />
             </div>
           </div>
+          {/* from row Category and Details */}
+          <div className="md:flex gap-5 container mx-auto w-100% mt-5">
+            <div className="form-control md:w-1/2 ">
+              <label className="label">
+                <span className="label-text font-bold text-xl">Price</span>
+              </label>
+              <input name="price" type="text" placeholder="Enter Products category" className="input input-bordered md:w-full" />
+            </div>
+            <div className="form-control md:w-1/2">
+              <label className="label">
+                <span className="label-text font-bold text-xl">Details</span>
+              </label>
+              <input name="details" type="text" placeholder="Enter Products details" className="input input-bordered md:w-full" />
+            </div>
+          </div>
           {/* from row name and quantity */}
           <div className="md:flex gap-5 container mx-auto w-100% mt-5">
             <div className="form-control md:w-full ">
@@ -79,7 +94,7 @@ const AddProducts = () => {
           </div>
           {/* from row name and quantity */}
           <div className="md:flex gap-5 container mx-auto w-100% mt-5">
-            <button className="btn bg-[#331A15] text-white mt-5 w-full">Add Products</button>
+            <button className="btn bg-yellow-400 hover:bg-yellow-500  mt-5 w-full">Add Products</button>
           </div>
         </form>
       </div>

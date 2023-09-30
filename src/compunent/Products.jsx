@@ -1,4 +1,6 @@
 import Swal from "sweetalert2";
+import { FaRegTrashCan, FaRotate } from "react-icons/fa6";
+import { FaRegEye } from "react-icons/fa";
 
 const Products = ({ product, products, setProducts }) => {
   const { _id, name, category, quantity, photo } = product;
@@ -47,7 +49,7 @@ const Products = ({ product, products, setProducts }) => {
     <div className="card card-side bg-base-100 shadow-xl">
       <div className="w-60">
         <figure>
-          <img className="mx-auto w-full" src={photo} alt={name} />
+          <img className="mx-auto w-full p-5" src={photo} alt={name} />
         </figure>
       </div>
       <div className="flex justify-between mx-auto w-full ">
@@ -62,10 +64,14 @@ const Products = ({ product, products, setProducts }) => {
         </div>
         <div className="card-actions justify-end pr-3">
           <div className="btn-group btn-group-vertical grid justify-around gap-3">
-            <button className="btn btn-active">View</button>
-            <button className="btn">Update</button>
-            <button onClick={() => handleDelete(_id)} className="btn">
-              Delete
+            <button className="btn btn-active">
+              <FaRegEye></FaRegEye>
+            </button>
+            <button className="btn hover:bg-yellow-400">
+              <FaRotate></FaRotate>
+            </button>
+            <button onClick={() => handleDelete(_id)} className=" btn hover:bg-yellow-400">
+              <FaRegTrashCan className="text-xl"></FaRegTrashCan>
             </button>
           </div>
         </div>

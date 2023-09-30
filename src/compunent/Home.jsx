@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <div className="container mx-auto px-10">
-      <div className="grid md:grid-cols-1 gap-10 mt-10 ">
+      <div className="grid md:grid-cols-1 gap-10 mt-10 mx-auto ">
         {products.map((product) => (
           <Products key={product._id} product={product} products={products} setProducts={setProducts}></Products>
         ))}

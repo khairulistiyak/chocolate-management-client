@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 const Main = () => {
   return (
     <div>
-      <div className="grid md:grid-cols-5 gap-4 md-w-150px ">
+      <div className="grid md:grid-cols-5 gap- md-w-150px ">
         <div className="mx-auto w-full ">
           <NavBar></NavBar>
         </div>
